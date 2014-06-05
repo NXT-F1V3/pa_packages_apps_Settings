@@ -154,6 +154,15 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.android.settings.slim.SystemappRemover"
+            android:label="@string/sizer_title"
+            android:parentActivityName="Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+
         <activity android:name=".SubSettings"
                 android:taskAffinity="com.android.settings"
                 android:parentActivityName="Settings">
@@ -164,6 +173,15 @@
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragments.DensityChanger"
+            android:label="@string/lcd_density_wizard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.carbon.settings.SHORTCUT" />
             </intent-filter>
         </activity>
 
@@ -1638,7 +1656,7 @@
                   android:label="@string/themes_settings_title"
                   android:taskAffinity=""
                   android:excludeFromRecents="true">
-            <intent-filter>
+           <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.THEME_SETTINGS" />
                 <category android:name="com.android.settings.SHORTCUT" />
@@ -1646,6 +1664,32 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.ThemeSettings" />
+        </activity>
+
+
+        <!-- CyanogenMod activities Start 
+        <activity android:name="Settings$SystemSettingsActivity"
+                android:label="@string/system_settings_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.cyanogenmod.SystemUiSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/system_settings" />
+        </activity> -->
+
+        <!-- NXT-F1V3 activities Start -->
+    	
+	<activity android:name=".nxtfive.NxtFiveTools"
+            android:label="NXT-F1V3 Tools" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->

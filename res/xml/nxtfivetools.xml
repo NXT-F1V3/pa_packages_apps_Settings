@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The NXTF1V3 RoM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/nxtfive_tools_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+        android:title="@string/system_category">
+
+    <!-- KernelTweaker -->
+    <PreferenceScreen
+        android:key="kerneltweaker_start"
+        android:title="@string/kernel_tweaker"
+        android:icon="@drawable/ic_kernel_tweaker" />
+
+    <!-- Density changer -->
+    <PreferenceScreen
+ 	    android:key="lcd_density_setup"
+        android:fragment="com.android.settings.n5x.DensityChanger"
+        android:title="@string/lcd_density_title"
+        android:icon="@drawable/ic_settings_density_changer"
+        android:summary="@string/lcd_density_summary" />
+        
+        
+    <!-- SlimSizer -->
+    <PreferenceScreen
+        android:id="@+id/system_app_remover"
+        android:icon="@drawable/ic_settings_slim_sizer"
+        android:title="@string/sizer_title"
+        android:fragment="com.android.settings.slim.SystemappRemover" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

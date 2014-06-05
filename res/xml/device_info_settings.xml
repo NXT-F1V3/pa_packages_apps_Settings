@@ -101,6 +101,18 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/model_number"
                 android:summary="@string/device_info_default"/>
+                
+	<!-- NXT-F1V3 version -->
+	    <Preference android:key="rom_header"
+		    style="?android:preferenceInformationStyle"
+		    android:title="@string/rom_header"
+		    android:summary="@string/rom_name"/>
+
+	    <Preference android:key="author_header"
+		     style="?android:preferenceInformationStyle"
+		     android:title="@string/author_header"
+		     android:summary="@string/author_name" />
+	<!-- End of NXT-F1V3 version -->
 
         <!-- Device firmware version -->
         <Preference android:key="firmware_version" 

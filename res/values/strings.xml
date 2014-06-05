@@ -4904,4 +4904,40 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screencolor_save">Save</string>
+    <string name="screencolor_cancel">Cancel</string>
+    <string name="previous_str">Previous</string>
+    <string name="new_str">New</string>
+    <string name="restore_preview">View default picture</string>
+    <string name="selectnewfile_menu">View new picture from Gallery</string>
+    <string name="selectfile_menu">View picture from Gallery</string>
+    <string name="restore_default_str">Reset</string>
+    <string name="hue_str">Hue: <xliff:g id="hue_value">%1$s</xliff:g></string>
+    <string name="saturation_str">Saturation: <xliff:g id="saturation_value">%1$s</xliff:g></string>
+    <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
+    <string name="intensity_str">Intensity: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+
+    <!-- NXT-F1V3 Settings 
+    <string name="crom_settings_title">NXT-F1V3 Extras</string>
+    <string name="crom_settings_summary">NXT-F1V3 features</string> -->
+
+   <!-- Advanced Settings, KernelTweakeri & SlimSizer 
+    <string name="nxtfive_settings">NXT-F1V3 Settings</string>
+    <string name="kernel_tweaker">Kernel Tweaker</string> -->
+
+    <!-- SlimSizer 
+    <string name="listsystem">list</string>
+    <string name="sizer_title">Systemapp Remover</string>
+    <string name="caution">Caution!</string>
+    <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string> -->
+
+    <!-- NXT-F1V3 ROM version 
+    <string name="rom_header">ROM Name</string>
+    <string name="rom_name">BB0X_NXT-F1V3-AOSPA ROM</string>
+    <string name="author_header">Modded By</string>
+    <string name="author_name">Shakir Abdul-Ahad</string> -->
+
 </resources>
